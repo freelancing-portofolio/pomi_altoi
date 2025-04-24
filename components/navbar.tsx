@@ -48,7 +48,7 @@ export default function Navbar() {
             </nav>
             {/* Contact button */}
             <div className='flex flex-row items-center justify-center'>
-               <button className='cursor-pointer h-12 px-8 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'>
+               <button className='cursor-pointer h-12 px-6 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'>
                   Contactați-ne
                </button>
             </div>
