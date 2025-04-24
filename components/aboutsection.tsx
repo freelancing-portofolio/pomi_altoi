@@ -3,7 +3,10 @@
 export default function AboutSection() {
    return (
       <main className='h-[600px] w-full'>
-         <section className='h-full w-full bg-green-200 flex flex-row'>
+         <section
+            id='about'
+            className='h-full w-full bg-green-200 flex flex-row'
+         >
             {/* About */}
             <div className='h-full w-full flex flex-col ml-13 gap-5 justify-center'>
                <span className='text-green-800 text-4xl font-bold text-left w-[85%] mb-5'>

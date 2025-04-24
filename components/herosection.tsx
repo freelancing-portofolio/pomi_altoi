@@ -1,6 +1,11 @@
 "use client";
 
 export default function Hero() {
+   const handleLearnMoreClick = () => {
+      const el = document.getElementById("about");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+   };
+
    return (
       <main className='h-[600px] w-full'>
          <section className='w-full h-full flex flex-row justify-center items-center relative overflow-hidden'>
@@ -33,7 +38,10 @@ export default function Hero() {
                   <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 h-12 rounded-md transition-colors'>
                      Descopera Produsele Noastre
                   </button>
-                  <button className='cursor-pointer text-lg px-6 h-12 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'>
+                  <button
+                     onClick={handleLearnMoreClick}
+                     className='cursor-pointer text-lg px-6 h-12 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'
+                  >
                      Afla Mai Multe
                   </button>
                </div>
