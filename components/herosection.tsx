@@ -1,5 +1,44 @@
 "use client";
 
 export default function Hero() {
-   return <div className='h-[600px] w-full bg-black'></div>;
+   return (
+      <main className='h-[600px] w-full'>
+         <section className='w-full h-full flex flex-row justify-center items-center relative overflow-hidden'>
+            {/* Video Background */}
+            <video
+               className='absolute inset-0 w-full h-full object-cover'
+               src='/hero_background.mov'
+               autoPlay
+               loop
+               muted
+               playsInline
+               preload='auto'
+               aria-hidden='true'
+            ></video>
+            {/* Black tint */}
+            <div className='absolute inset-0 bg-black/50' />
+            {/* Hero Writing */}
+            <div className='absolute flex flex-col justify-center items-center gap-8'>
+               {/* Title */}
+               <span className='text-7xl font-bold'>
+                  Experți în Altoirea Pomilor
+               </span>
+               {/* Subtitle */}
+               <span className='text-xl mb-10'>
+                  Cultivăm pomi fructiferi altoiți de cea mai înaltă calitate
+                  pentru grădini, livezi și spații verzi.
+               </span>
+               {/* Buttons */}
+               <div className='flex flex-row gap-10'>
+                  <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 h-12 rounded-md transition-colors'>
+                     Descopera Produsele Noastre
+                  </button>
+                  <button className='cursor-pointer text-lg px-6 h-12 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'>
+                     Afla Mai Multe
+                  </button>
+               </div>
+            </div>
+         </section>
+      </main>
+   );
 }
