@@ -2,7 +2,7 @@
 
 export default function Hero() {
    const handleLearnMoreClick = () => {
-      const el = document.getElementById("about");
+      const el = document.getElementById("desprenoi");
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
    };
 

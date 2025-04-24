@@ -2,8 +2,29 @@
 
 import { TreeDeciduous } from "lucide-react";
 import Link from "next/link";
+import { useCallback } from "react";
 
 export default function Navbar() {
+   const sections = [
+      "Despre Noi",
+      "Servicii",
+      "Produse",
+      "Păreri Clienți",
+      "Contact",
+   ];
+
+   const handleScroll = useCallback(
+      (e: { preventDefault: () => void }, label: string) => {
+         e.preventDefault();
+         const id = label.toLowerCase().replace(/\s+/g, "");
+         const el = document.getElementById(id);
+         if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+         }
+      },
+      []
+   );
+
    return (
       <header className='sticky top-0 z-50 w-full bg-background/70 border-b backdrop-blur-sm'>
          <div className='mx-auto max-w-site px-15 h-18 flex items-center justify-between'>
@@ -25,6 +46,7 @@ export default function Navbar() {
                   <Link
                      key={label}
                      href={`#${label.toLowerCase().replace(/\s+/g, "")}`}
+                     onClick={(e) => handleScroll(e, label)}
                      className='hover:text-green-700 transition-colors'
                   >
                      {label}

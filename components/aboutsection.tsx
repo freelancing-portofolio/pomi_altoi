@@ -3,7 +3,7 @@
 export default function AboutSection() {
    return (
       <main>
-         <section id='about' className='bg-green-200'>
+         <section id='desprenoi' className='bg-green-200'>
             <div className='mx-auto max-w-site px-15 h-[600px] flex items-center justify-between gap-20'>
                {/* About */}
                <div className='w-1/2 flex flex-col gap-5 justify-center'>
