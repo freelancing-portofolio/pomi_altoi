@@ -8,7 +8,7 @@ export default function AboutSection() {
             className='h-full w-full bg-green-200 flex flex-row'
          >
             {/* About */}
-            <div className='h-full w-full flex flex-col ml-13 gap-5 justify-center'>
+            <div className='h-full w-full flex flex-col ml-18 gap-5 justify-center'>
                <span className='text-green-800 text-4xl font-bold text-left w-[85%] mb-5'>
                   Despre Pomi Altoi
                </span>
@@ -29,7 +29,7 @@ export default function AboutSection() {
                   monitorizat constant de specialiștii noștri.
                </span>
             </div>
-            <div className='h-full w-full flex flex-col justify-center items-center'>
+            <div className='h-full w-full flex flex-col justify-center items-center mr-3'>
                <video
                   className='w-[85%] rounded-xl shadow-6xl'
                   src='/about_section.mov'
