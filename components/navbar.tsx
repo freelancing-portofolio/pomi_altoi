@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Navbar() {
    return (
-      <header className='sticky top-0 z-50 h-18 w-full bg-background/70 border-b'>
+      <header className='sticky top-0 z-50 h-18 w-full bg-background/70 border-b backdrop-blur-sm'>
          {/* Navbar div */}
          <div className='h-full w-full flex justify-around gap-50'>
             {/* Icon and Writing Part */}
