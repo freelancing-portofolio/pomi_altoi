@@ -11,6 +11,9 @@ const config: Config = {
          colors: {
             background: "255 255 255",
          },
+         maxWidth: {
+            site: "1280px",
+         },
       },
    },
    plugins: [],
