@@ -7,7 +7,7 @@ export default function Navbar() {
    return (
       <header className='sticky top-0 z-50 h-18 w-full bg-background/70 border-b'>
          {/* Navbar div */}
-         <div className='h-full w-full flex justify-around'>
+         <div className='h-full w-full flex justify-around gap-50'>
             {/* Icon and Writing Part */}
             <div className='flex items-center gap-2 cursor-pointer'>
                <TreeDeciduous className='h-7 w-7 text-green-600' />
