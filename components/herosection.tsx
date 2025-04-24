@@ -8,7 +8,7 @@ export default function Hero() {
 
    return (
       <main className='h-[600px] w-full'>
-         <section className='w-full h-full flex flex-row justify-center items-center relative overflow-hidden'>
+         <section className='mx-auto max-w-site h-full flex flex-row justify-center items-center relative overflow-hidden'>
             {/* Video Background */}
             <video
                className='absolute inset-0 w-full h-full object-cover'
