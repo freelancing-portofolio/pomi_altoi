@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar";
 import HeroSection from "../../components/herosection";
 import AboutSection from "../../components/aboutsection";
 import ServicesSection from "../../components/servicessection";
+import ContactSection from "../../components/contactsection";
 
 export default function LandingPage() {
    return (
@@ -12,6 +13,7 @@ export default function LandingPage() {
          <HeroSection />
          <AboutSection />
          <ServicesSection />
+         <ContactSection />
       </div>
    );
 }
