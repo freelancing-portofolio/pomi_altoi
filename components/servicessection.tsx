@@ -18,7 +18,7 @@ export default function ServicesSection() {
                      <h3 className='tracking-tight text-black text-2xl mb-3 font-bold'>
                         Comercializarea Pomilor
                      </h3>
-                     <p className='text-left text-gray-500 text-lg'>
+                     <p className='text-left text-gray-700 text-xl'>
                         Punem la dispoziție clienților numeroase soiuri de pomi
                         fructiferi potrivite pentru orice grădină.
                      </p>
@@ -30,7 +30,7 @@ export default function ServicesSection() {
                      <h3 className='tracking-tight text-black text-2xl mb-3 font-bold'>
                         Consultanță Specializată
                      </h3>
-                     <p className='text-left text-gray-500 text-lg'>
+                     <p className='text-left text-gray-700 text-xl'>
                         Oferim sfaturi personalizate pentru alegerea soiurilor
                         potrivite condițiilor specifice terenului dumneavoastră.
                      </p>
@@ -42,7 +42,7 @@ export default function ServicesSection() {
                      <h3 className='tracking-tight text-black text-2xl mb-3 font-bold'>
                         Întreținere și Îngrijire
                      </h3>
-                     <p className='text-left text-gray-500 text-lg'>
+                     <p className='text-left text-gray-700 text-xl'>
                         Asigurăm servicii complete de întreținere, tăiere și
                         tratare a pomilor pentru o dezvoltare optimă.
                      </p>
