@@ -38,12 +38,12 @@ export default function Hero() {
                </p>
                {/* Buttons */}
                <div className='flex flex-row gap-10'>
-                  <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 h-12 rounded-md transition-colors'>
+                  <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 py-2 rounded-md transition-colors'>
                      Descopera Produsele Noastre
                   </button>
                   <button
                      onClick={handleLearnMoreClick}
-                     className='cursor-pointer text-lg px-6 h-12 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'
+                     className='cursor-pointer text-lg px-6 py-2 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'
                   >
                      Afla Mai Multe
                   </button>

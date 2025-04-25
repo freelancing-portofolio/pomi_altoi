@@ -30,7 +30,9 @@ export default function ContactSection() {
                   </div>
                </div>
                <div className='flex flex-col gap-2'>
-                  <h3 className='text-2xl font-bold mb-1'>Program de lucru</h3>
+                  <h3 className='text-2xl font-bold mb-1 tracking-tight'>
+                     Program de lucru
+                  </h3>
                   <p className='text-xl'>Luni - Vineri: 8:00 - 17:00</p>
                   <p className='text-xl'>Sâmbătă: 9:00 - 14:00</p>
                   <p className='text-xl'>Duminică: Închis</p>

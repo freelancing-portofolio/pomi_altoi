@@ -29,7 +29,7 @@ export default function Navbar() {
             >
                {/* Icon and Writing Part */}
                <TreeDeciduous className='h-7 w-7 text-green-600' />
-               <span className='text-2xl font-bold text-black'>Pomi Altoi</span>
+               <h1 className='text-2xl font-bold text-black'>Pomi Altoi</h1>
             </div>
             {/* Navbar Links */}
             <nav className='flex items-center gap-6 text-lg font-medium text-black'>
@@ -51,7 +51,10 @@ export default function Navbar() {
                ))}
             </nav>
             {/* Contact button */}
-            <button className='h-12 px-6 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'>
+            <button
+               onClick={(e) => handleScroll(e, "Contact")}
+               className='cursor-pointer py-2 px-6 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
+            >
                Contactați-ne
             </button>
          </div>

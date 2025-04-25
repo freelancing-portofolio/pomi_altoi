@@ -5,6 +5,7 @@ import HeroSection from "../../components/herosection";
 import AboutSection from "../../components/aboutsection";
 import ServicesSection from "../../components/servicessection";
 import ContactSection from "../../components/contactsection";
+import Footer from "../../components/footer";
 
 export default function LandingPage() {
    return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
          <AboutSection />
          <ServicesSection />
          <ContactSection />
+         <Footer />
       </div>
    );
 }
