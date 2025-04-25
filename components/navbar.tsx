@@ -5,20 +5,14 @@ import Link from "next/link";
 import { useCallback } from "react";
 
 export default function Navbar() {
-   const sections = [
-      "Despre Noi",
-      "Servicii",
-      "Produse",
-      "Păreri Clienți",
-      "Contact",
-   ];
-
    const handleScroll = useCallback(
       (e: { preventDefault: () => void }, label: string) => {
          e.preventDefault();
          const id = label.toLowerCase().replace(/\s+/g, "");
          const el = document.getElementById(id);
-         if (el) {
+         if (el && label == "Hero") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+         } else if (el) {
             el.scrollIntoView({ behavior: "smooth", block: "start" });
          }
       },
@@ -29,7 +23,10 @@ export default function Navbar() {
       <header className='sticky top-0 z-50 w-full bg-background/70 border-b backdrop-blur-sm'>
          <div className='mx-auto max-w-site px-15 h-18 flex items-center justify-between'>
             {/* Navbar div */}
-            <div className='flex items-center gap-2 cursor-pointer'>
+            <div
+               onClick={(e) => handleScroll(e, "Hero")}
+               className='flex items-center gap-2 cursor-pointer'
+            >
                {/* Icon and Writing Part */}
                <TreeDeciduous className='h-7 w-7 text-green-600' />
                <span className='text-2xl font-bold text-black'>Pomi Altoi</span>
