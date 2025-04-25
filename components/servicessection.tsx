@@ -1,13 +1,53 @@
 "use client";
 
+import { TreeDeciduous, Sprout, Leaf } from "lucide-react";
+
 export default function ServicesSection() {
    return (
       <main>
          <section id='servicii' className='bg-gray-100'>
-            <div className='mx-auto max-w-site px-15 h-[600px] flex'>
-               <span className='text-green-800 text-bold'>
+            <div className='mx-auto max-w-site px-15 h-[600px] flex flex-col justify-center items-center gap-20'>
+               <p className='tracking-tight text-4xl font-bold text-green-800 mx-auto'>
                   Serviciile Noastre
-               </span>
+               </p>
+               <div className='grid grid-cols-3 mx-auto max-w-site gap-8'>
+                  <div className='bg-white p-8 shadow-md rounded-2xl hover:shadow-2xl transition-shadow'>
+                     <div className='w-12 h-12 rounded-full flex bg-green-100 justify-center items-center mb-6'>
+                        <Sprout className='h-6 w-6 text-green-600' />
+                     </div>
+                     <h3 className='tracking-tight text-black text-2xl mb-3 font-bold'>
+                        Comercializarea Pomilor
+                     </h3>
+                     <p className='text-left text-gray-500 text-lg'>
+                        Punem la dispoziție clienților numeroase soiuri de pomi
+                        fructiferi potrivite pentru orice grădină.
+                     </p>
+                  </div>
+                  <div className='bg-white p-8 shadow-md rounded-2xl hover:shadow-2xl transition-shadow'>
+                     <div className='w-12 h-12 rounded-full flex bg-green-100 justify-center items-center mb-6'>
+                        <TreeDeciduous className='h-6 w-6 text-green-600' />
+                     </div>
+                     <h3 className='tracking-tight text-black text-2xl mb-3 font-bold'>
+                        Consultanță Specializată
+                     </h3>
+                     <p className='text-left text-gray-500 text-lg'>
+                        Oferim sfaturi personalizate pentru alegerea soiurilor
+                        potrivite condițiilor specifice terenului dumneavoastră.
+                     </p>
+                  </div>
+                  <div className='bg-white p-8 shadow-md rounded-2xl hover:shadow-2xl transition-shadow'>
+                     <div className='w-12 h-12 rounded-full flex bg-green-100 justify-center items-center mb-6'>
+                        <Leaf className='h-6 w-6 text-green-600' />
+                     </div>
+                     <h3 className='tracking-tight text-black text-2xl mb-3 font-bold'>
+                        Întreținere și Îngrijire
+                     </h3>
+                     <p className='text-left text-gray-500 text-lg'>
+                        Asigurăm servicii complete de întreținere, tăiere și
+                        tratare a pomilor pentru o dezvoltare optimă.
+                     </p>
+                  </div>
+               </div>
             </div>
          </section>
       </main>

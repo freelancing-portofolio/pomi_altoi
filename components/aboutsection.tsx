@@ -7,7 +7,7 @@ export default function AboutSection() {
             <div className='mx-auto max-w-site px-15 h-[600px] flex items-center justify-between gap-20'>
                {/* About */}
                <div className='flex-1 flex flex-col gap-5 justify-center'>
-                  <h1 className='tracking-tight text-4xl font-bold text-green-800'>
+                  <h1 className='tracking-tight text-4xl font-bold text-green-800 mb-6'>
                      Despre Pomi Altoi
                   </h1>
                   <p className='text-xl text-gray-700'>
