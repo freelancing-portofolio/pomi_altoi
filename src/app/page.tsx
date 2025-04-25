@@ -3,6 +3,7 @@
 import Navbar from "../../components/navbar";
 import HeroSection from "../../components/herosection";
 import AboutSection from "../../components/aboutsection";
+import ServicesSection from "../../components/servicessection";
 
 export default function LandingPage() {
    return (
@@ -10,6 +11,7 @@ export default function LandingPage() {
          <Navbar />
          <HeroSection />
          <AboutSection />
+         <ServicesSection />
       </div>
    );
 }
