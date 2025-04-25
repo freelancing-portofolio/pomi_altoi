@@ -6,7 +6,7 @@ export default function ServicesSection() {
    return (
       <main>
          <section id='servicii' className='bg-gray-100'>
-            <div className='mx-auto max-w-site px-15 h-[600px] flex flex-col justify-center items-center gap-20'>
+            <div className='mx-auto max-w-site px-15 py-16 flex flex-col justify-center items-center gap-20'>
                <p className='tracking-tight text-4xl font-bold text-green-800 mx-auto'>
                   Serviciile Noastre
                </p>

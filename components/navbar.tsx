@@ -21,7 +21,7 @@ export default function Navbar() {
 
    return (
       <header className='sticky top-0 z-50 w-full bg-background/70 border-b backdrop-blur-sm'>
-         <div className='mx-auto max-w-site px-15 h-18 flex items-center justify-between'>
+         <div className='mx-auto max-w-site px-15 py-4 flex items-center justify-between'>
             {/* Navbar div */}
             <div
                onClick={(e) => handleScroll(e, "Hero")}

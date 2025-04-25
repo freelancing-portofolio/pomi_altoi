@@ -4,7 +4,7 @@ export default function AboutSection() {
    return (
       <main>
          <section id='desprenoi' className='bg-green-100 w-full'>
-            <div className='mx-auto max-w-site px-15 h-[600px] flex items-center justify-between gap-20'>
+            <div className='mx-auto max-w-site px-15 py-16 flex items-center justify-between gap-20'>
                {/* About */}
                <div className='flex-1 flex flex-col gap-5 justify-center'>
                   <h1 className='tracking-tight text-4xl font-bold text-green-800 mb-6'>
