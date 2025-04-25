@@ -21,21 +21,19 @@ export default function ContactSection() {
                   <div className='flex flex-row gap-2 items-center'>
                      <MapPin className='h-6 w-6' />
                      <p className='text-xl'>
-                        Str. Livezilor nr. 123, Județul Argeș, România
+                        Calea Adjudului 210, Onești, jud. Bacău, România
                      </p>
                   </div>
                   <div className='flex flex-row gap-2 items-center'>
                      <Phone className='h-6 w-6' />
-                     <p className='text-xl'>+40 712 345 678</p>
+                     <p className='text-xl'>+40 743 329 612</p>
                   </div>
                </div>
                <div className='flex flex-col gap-2'>
                   <h3 className='text-2xl font-bold mb-1 tracking-tight'>
                      Program de lucru
                   </h3>
-                  <p className='text-xl'>Luni - Vineri: 8:00 - 17:00</p>
-                  <p className='text-xl'>Sâmbătă: 9:00 - 14:00</p>
-                  <p className='text-xl'>Duminică: Închis</p>
+                  <p className='text-xl'>Luni - Duminică: 07:30 - 18:00</p>
                </div>
             </div>
          </section>

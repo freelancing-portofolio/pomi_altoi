@@ -12,9 +12,9 @@ export default function AboutSection() {
                   </h1>
                   <p className='text-xl text-gray-700'>
                      Cu o experiență de peste 20 ani în domeniul altoirii
-                     pomilor, Pomi Altoi s-a specializat în producerea și
-                     comercializarea de pomi fructiferi altoiți de calitate
-                     superioară.
+                     pomilor, afacerea de familie Pomi Altoi s-a specializat în
+                     producerea și comercializarea de pomi fructiferi altoiți de
+                     calitate superioară.
                   </p>
                   <p className='text-xl text-gray-700'>
                      Folosim tehnici tradiționale combinate cu metode moderne
