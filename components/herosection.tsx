@@ -1,10 +1,10 @@
 "use client";
 
+import { useContext } from "react";
+import { ScrollContext } from "./../context/scrollcontext";
+
 export default function Hero() {
-   const handleLearnMoreClick = () => {
-      const el = document.getElementById("desprenoi");
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-   };
+   const { handleScroll } = useContext(ScrollContext);
 
    return (
       <main className='h-[600px] w-full'>
@@ -42,7 +42,7 @@ export default function Hero() {
                      Descopera Produsele Noastre
                   </button>
                   <button
-                     onClick={handleLearnMoreClick}
+                     onClick={(e) => handleScroll(e, "Despre Noi")}
                      className='cursor-pointer text-lg px-6 py-2 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'
                   >
                      Afla Mai Multe

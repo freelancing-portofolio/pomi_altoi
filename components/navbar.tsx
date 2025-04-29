@@ -1,23 +1,12 @@
 "use client";
 
+import { useContext } from "react";
 import { TreeDeciduous } from "lucide-react";
 import Link from "next/link";
-import { useCallback } from "react";
+import { ScrollContext } from "./../context/scrollcontext";
 
 export default function Navbar() {
-   const handleScroll = useCallback(
-      (e: { preventDefault: () => void }, label: string) => {
-         e.preventDefault();
-         const id = label.toLowerCase().replace(/\s+/g, "");
-         const el = document.getElementById(id);
-         if (el && label == "Hero") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-         } else if (el) {
-            el.scrollIntoView({ behavior: "smooth", block: "start" });
-         }
-      },
-      []
-   );
+   const { handleScroll } = useContext(ScrollContext);
 
    return (
       <header className='sticky top-0 z-50 w-full bg-background/70 border-b backdrop-blur-sm'>
