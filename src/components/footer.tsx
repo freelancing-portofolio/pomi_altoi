@@ -1,23 +1,12 @@
 "use client";
 
-import { TreeDeciduous } from "lucide-react";
-import { useCallback } from "react";
+import { Scroll, TreeDeciduous } from "lucide-react";
+import { useCallback, useContext } from "react";
 import Link from "next/link";
+import { ScrollContext } from "../context/scrollcontext";
 
 export default function Footer() {
-   const handleScroll = useCallback(
-      (e: { preventDefault: () => void }, label: string) => {
-         e.preventDefault();
-         const id = label.toLowerCase().replace(/\s+/g, "");
-         const el = document.getElementById(id);
-         if (el && label == "Hero") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-         } else if (el) {
-            el.scrollIntoView({ behavior: "smooth", block: "start" });
-         }
-      },
-      []
-   );
+   const { handleScroll } = useContext(ScrollContext);
 
    return (
       <footer>
