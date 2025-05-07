@@ -64,7 +64,7 @@ export default function Navbar() {
                }}
                className='flex items-center gap-2 cursor-pointer bg-transparent focus:outline-none'
             >
-               <TreeDeciduous className='h-8 w-8 text-green-600' />
+               <TreeDeciduous className='h-8 w-8 md:h-6 md:w-6 lg:h-8 lg:w-8 text-green-600' />
                <h1 className='text-2xl md:text-xl lg:text-2xl font-bold text-black'>
                   Pomi Altoi
                </h1>
@@ -93,7 +93,7 @@ export default function Navbar() {
                   e.preventDefault();
                   handleScroll(e as any, "Contact");
                }}
-               className='hidden md:block py-2 px-6 text-md xl:text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
+               className='hidden md:block py-2 px-6 text-md lg:text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
             >
                Contactați-ne
             </button>
