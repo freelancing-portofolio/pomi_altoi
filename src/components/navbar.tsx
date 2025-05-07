@@ -65,11 +65,13 @@ export default function Navbar() {
                className='flex items-center gap-2 cursor-pointer bg-transparent focus:outline-none'
             >
                <TreeDeciduous className='h-8 w-8 text-green-600' />
-               <h1 className='text-2xl font-bold text-black'>Pomi Altoi</h1>
+               <h1 className='text-2xl md:text-xl lg:text-2xl font-bold text-black'>
+                  Pomi Altoi
+               </h1>
             </button>
 
             {/* Desktop Nav */}
-            <nav className='hidden md:flex items-center gap-6 text-md xl:text-lg font-medium text-black'>
+            <nav className='hidden md:flex items-center gap-6 text-md lg:text-lg font-medium text-black'>
                {labels.map((label) => (
                   <Link
                      key={label}
