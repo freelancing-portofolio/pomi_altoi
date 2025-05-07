@@ -53,7 +53,7 @@ export default function Navbar() {
    };
 
    return (
-      <header className='sticky top-0 z-50 w-full px-6 md:px-15 py-4 bg-background/70 backdrop-blur-lg'>
+      <header className='sticky top-0 z-50 w-full px-6 xl:px-15 py-4 bg-background/70 backdrop-blur-lg'>
          <div className='mx-auto max-w-site flex items-center justify-between'>
             {/* Logo / Home */}
             <button
@@ -65,11 +65,13 @@ export default function Navbar() {
                className='flex items-center gap-2 cursor-pointer bg-transparent focus:outline-none'
             >
                <TreeDeciduous className='h-8 w-8 text-green-600' />
-               <h1 className='text-2xl font-bold text-black'>Pomi Altoi</h1>
+               <h1 className='text-lg lg:text-2xl font-bold text-black'>
+                  Pomi Altoi
+               </h1>
             </button>
 
             {/* Desktop Nav */}
-            <nav className='hidden md:flex items-center gap-6 text-lg font-medium text-black'>
+            <nav className='hidden md:flex items-center gap-6 text-md xl:text-lg font-medium text-black'>
                {labels.map((label) => (
                   <Link
                      key={label}
@@ -91,7 +93,7 @@ export default function Navbar() {
                   e.preventDefault();
                   handleScroll(e as any, "Contact");
                }}
-               className='hidden md:block py-2 px-6 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
+               className='hidden md:block py-2 px-6 text-md xl:text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
             >
                Contactați-ne
             </button>
