@@ -4,10 +4,10 @@ export default function AboutSection() {
    return (
       <main>
          <section id='desprenoi' className='bg-green-100 w-full'>
-            <div className='mx-auto max-w-site px-15 py-16 flex items-center justify-between gap-20'>
+            <div className='mx-auto max-w-site px-6 xl:px-15 py-16 flex flex-col lg:flex-row items-center justify-between gap-20'>
                {/* About */}
                <div className='flex-1 flex flex-col gap-5 justify-center'>
-                  <h1 className='tracking-tight text-4xl font-bold text-green-800 mb-6'>
+                  <h1 className='tracking-tight text-4xl text-center lg:text-left font-bold text-green-800 mb-6'>
                      Despre Pomi Altoi
                   </h1>
                   <p className='text-xl text-gray-700'>
@@ -30,6 +30,7 @@ export default function AboutSection() {
                <div className='flex-1 flex justify-center'>
                   <video
                      className='w-full rounded-xl shadow-6xl'
+                     preload='metadata'
                      src='/about_section.mov'
                      controls
                   />
