@@ -32,7 +32,7 @@ export default function Hero() {
                   Experți în Altoirea Pomilor
                </h1>
                {/* Subtitle */}
-               <p className='text-center text-lg lg:text-xl mb-10'>
+               <p className='text-center text-xl mb-10'>
                   Cultivăm pomi fructiferi altoiți de cea mai înaltă calitate
                   pentru grădini, livezi și spații verzi.
                </p>
