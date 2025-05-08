@@ -26,18 +26,18 @@ export default function Hero() {
             {/* Black tint */}
             <div className='absolute inset-0 bg-black/50' />
             {/* Hero Writing */}
-            <div className='absolute flex flex-col justify-center items-center gap-8'>
+            <div className='absolute flex flex-col justify-center items-center gap-8 px-6 md:px-15'>
                {/* Title */}
-               <h1 className='tracking-tight text-7xl font-bold'>
+               <h1 className='tracking-tight text-4xl sm:text-6xl lg:text-7xl font-bold text-center'>
                   Experți în Altoirea Pomilor
                </h1>
                {/* Subtitle */}
-               <p className='text-xl mb-10'>
+               <p className='text-center text-lg lg:text-xl mb-10'>
                   Cultivăm pomi fructiferi altoiți de cea mai înaltă calitate
                   pentru grădini, livezi și spații verzi.
                </p>
                {/* Buttons */}
-               <div className='flex flex-row gap-10'>
+               <div className='flex flex-col md:flex-row gap-10'>
                   <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 py-2 rounded-md transition-colors'>
                      Descopera Produsele Noastre
                   </button>
