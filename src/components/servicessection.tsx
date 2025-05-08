@@ -6,11 +6,11 @@ export default function ServicesSection() {
    return (
       <main>
          <section id='servicii' className='bg-gray-100'>
-            <div className='mx-auto max-w-site px-15 py-16 flex flex-col justify-center items-center gap-20'>
+            <div className='mx-auto max-w-site px-6 xl:px-15 py-16 flex flex-col justify-center items-center gap-20'>
                <p className='tracking-tight text-4xl font-bold text-green-800 mx-auto'>
                   Serviciile Noastre
                </p>
-               <div className='grid grid-cols-3 mx-auto max-w-site gap-8'>
+               <div className='flex flex-col lg:grid lg:grid-cols-3 mx-auto max-w-site gap-8'>
                   <div className='bg-white p-8 shadow-md rounded-2xl hover:shadow-2xl transition-shadow'>
                      <div className='w-12 h-12 rounded-full flex bg-green-100 justify-center items-center mb-6'>
                         <Sprout className='h-6 w-6 text-green-600' />
