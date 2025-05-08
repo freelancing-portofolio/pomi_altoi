@@ -37,7 +37,7 @@ export default function Hero() {
                   pentru grădini, livezi și spații verzi.
                </p>
                {/* Buttons */}
-               <div className='flex flex-col md:flex-row gap-10'>
+               <div className='flex flex-col sm:flex-row gap-10'>
                   <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 py-2 rounded-md transition-colors'>
                      Descopera Produsele Noastre
                   </button>
