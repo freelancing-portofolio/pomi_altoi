@@ -10,8 +10,8 @@ export default function Footer() {
 
    return (
       <footer>
-         <div className='bg-gray-900 py-16 px-15 flex flex-col justify-center max-w-site mx-auto gap-10 text-white'>
-            <div className='grid grid-cols-3'>
+         <div className='bg-gray-900 py-16 px-6 xl:px-15 flex flex-col justify-center max-w-site mx-auto gap-10 text-white'>
+            <div className='flex flex-col sm:flex-row gap-20 md:grid md:grid-cols-3'>
                <div className='flex flex-col gap-5'>
                   <div className='flex items-center gap-2'>
                      <TreeDeciduous className='h-7 w-7 text-green-600' />
@@ -24,7 +24,7 @@ export default function Footer() {
                      calitate superioară din 2004.
                   </p>
                </div>
-               <div className='flex flex-col gap-5 items-start justify-center'>
+               <div className='hidden md:flex flex-col gap-5 items-start justify-center'>
                   <h3 className='text-2xl font-bold tracking-tight'>
                      Link-uri Rapide
                   </h3>
