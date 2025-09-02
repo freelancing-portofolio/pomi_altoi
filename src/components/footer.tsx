@@ -1,7 +1,7 @@
 "use client";
 
-import { Scroll, TreeDeciduous } from "lucide-react";
-import { useCallback, useContext } from "react";
+import { TreeDeciduous } from "lucide-react";
+import { useContext } from "react";
 import Link from "next/link";
 import { ScrollContext } from "../context/scrollcontext";
 
