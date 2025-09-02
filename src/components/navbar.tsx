@@ -1,7 +1,12 @@
 "use client";
 
 import React, { useContext, useState } from "react";
-import { TreeDeciduous, Menu as MenuIcon, X as CloseIcon } from "lucide-react";
+import {
+   TreeDeciduous,
+   Menu as MenuIcon,
+   X as CloseIcon,
+   Phone,
+} from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollContext } from "../context/scrollcontext";
@@ -35,13 +40,7 @@ export default function Navbar() {
    const { handleScroll } = useContext(ScrollContext);
    const [isOpen, setIsOpen] = useState(false);
 
-   const labels = [
-      "Despre Noi",
-      "Servicii",
-      "Produse",
-      "Păreri Clienți",
-      "Contact",
-   ];
+   const labels = ["Despre Noi", "Servicii", "Produse", "Contact"];
 
    const handleLinkClick = (
       e: React.MouseEvent<HTMLAnchorElement>,
@@ -88,15 +87,10 @@ export default function Navbar() {
             </nav>
 
             {/* Desktop Contact Button */}
-            <button
-               onClick={(e) => {
-                  e.preventDefault();
-                  handleScroll(e as any, "Contact");
-               }}
-               className='hidden md:block py-2 px-6 text-md lg:text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
-            >
-               Contactați-ne
-            </button>
+            <div className='hidden md:flex flex-row gap-2 items-center'>
+               <Phone className='h-6 w-6 shrink-0 text-green-600' />
+               <p className='text-xl text-black'>+40 743 329 612</p>
+            </div>
 
             {/* Mobile Toggle */}
             <button
