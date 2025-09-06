@@ -1,15 +1,17 @@
 "use client";
 
-import React, { useContext, useState } from "react";
+import type React from "react";
+import { useContext, useState } from "react";
 import {
    TreeDeciduous,
-   Menu as MenuIcon,
-   X as CloseIcon,
+   MenuIcon,
+   CloverIcon as CloseIcon,
    Phone,
 } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollContext } from "../context/scrollcontext";
+import Image from "next/image";
 
 const menuContainer = {
    closed: {
@@ -47,7 +49,11 @@ export default function Navbar() {
       label: string
    ) => {
       e.preventDefault();
-      handleScroll(e, label);
+      if (label === "Produse") {
+         window.location.href = "/produse";
+      } else {
+         handleScroll(e, label);
+      }
       setIsOpen(false);
    };
 
@@ -55,29 +61,34 @@ export default function Navbar() {
       <header className='sticky top-0 z-50 w-full px-6 xl:px-15 py-4 bg-background/70 backdrop-blur-lg'>
          <div className='mx-auto max-w-site flex items-center justify-between'>
             {/* Logo / Home */}
-            <button
-               onClick={(e) => {
-                  e.preventDefault();
-                  handleScroll(e as any, "Hero");
-                  setIsOpen(false);
-               }}
-               className='flex items-center gap-2 cursor-pointer bg-transparent focus:outline-none'
-            >
-               <TreeDeciduous className='h-8 w-8 md:h-6 md:w-6 lg:h-8 lg:w-8 text-green-600' />
+            <Link href='/' className='flex items-center gap-2 cursor-pointer'>
+               <Image
+                  src='/icon.jpeg'
+                  alt='Pomi Altoi Logo'
+                  width={64}
+                  height={64}
+                  className='h-8 w-8 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain rounded-full'
+               />
                <h1 className='text-2xl md:text-xl lg:text-2xl font-bold text-black'>
                   Pomi Altoi
                </h1>
-            </button>
+            </Link>
 
             {/* Desktop Nav */}
             <nav className='hidden md:flex items-center gap-6 text-md lg:text-lg font-medium text-black'>
                {labels.map((label) => (
                   <Link
                      key={label}
-                     href={`#${label.toLowerCase().replace(/\s+/g, "")}`}
+                     href={
+                        label === "Produse"
+                           ? "/produse"
+                           : `/#${label.toLowerCase().replace(/\s+/g, "")}`
+                     }
                      onClick={(e) => {
-                        e.preventDefault();
-                        handleScroll(e, label);
+                        if (label !== "Produse") {
+                           e.preventDefault();
+                           handleScroll(e, label);
+                        }
                      }}
                      className='hover:text-green-700 transition-colors'
                   >
@@ -127,9 +138,13 @@ export default function Navbar() {
                            className='w-full text-center'
                         >
                            <Link
-                              href={`#${label
-                                 .toLowerCase()
-                                 .replace(/\s+/g, "")}`}
+                              href={
+                                 label === "Produse"
+                                    ? "/produse"
+                                    : `/#${label
+                                         .toLowerCase()
+                                         .replace(/\s+/g, "")}`
+                              }
                               onClick={(e) => handleLinkClick(e, label)}
                               className='block py-2 text-xl font-medium text-black hover:text-green-700 transition-colors'
                            >
@@ -144,7 +159,7 @@ export default function Navbar() {
                   >
                      <button
                         onClick={(e) => handleLinkClick(e as any, "Contact")}
-                        className='py-2 px-6 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md'
+                        className='py-2 px-6 text-lg font-medium bg-green-600 hover:bg-green-700 transition-colors rounded-md text-white'
                      >
                         Contactați-ne
                      </button>

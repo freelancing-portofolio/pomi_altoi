@@ -14,8 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-   title: "Pomi Altoi",
-   description: "Experți în altoirea pomilor fructiferi",
+   title: "Pomi Altoi - Experți în Altoirea Pomilor",
+   description:
+      "Cultivăm pomi fructiferi altoiți de cea mai înaltă calitate pentru grădini, livezi și spații verzi.",
+   icons: {
+      icon: "/icon.jpeg",
+      shortcut: "/icon.jpeg",
+      apple: "/icon.jpeg",
+   },
 };
 
 export default function RootLayout({

@@ -1,0 +1,148 @@
+{
+   "products": [
+      {
+         "id": 1,
+         "name": "Măr Jonathan",
+         "category": "apple",
+         "description": "Soiul Jonathan este cunoscut pentru fructele sale aromate și crocante, cu o culoare roșie strălucitoare. Ideal pentru consum proaspăt și prepararea dulcețurilor.",
+         "price": 45,
+         "inStock": true
+      },
+      {
+         "id": 2,
+         "name": "Măr Golden Delicious",
+         "category": "apple",
+         "description": "Fructe mari, galbene, cu gust dulce și aromat. Foarte productiv și rezistent la boli. Perfect pentru toate tipurile de preparate culinare.",
+         "price": 42,
+         "inStock": true
+      },
+      {
+         "id": 3,
+         "name": "Măr Idared",
+         "category": "apple",
+         "description": "Soiul Idared produce fructe mari, cu coaja roșie și galbenă. Foarte bun pentru depozitare îndelungată și procesare industrială.",
+         "price": 48,
+         "inStock": true
+      },
+      {
+         "id": 4,
+         "name": "Păr Williams",
+         "category": "pear",
+         "description": "Cel mai popular soi de păr, cu fructe mari, suculente și foarte aromate. Excelent pentru consum proaspăt și conserve.",
+         "price": 50,
+         "inStock": true
+      },
+      {
+         "id": 5,
+         "name": "Păr Conference",
+         "category": "pear",
+         "description": "Fructe alungite, cu pulpa fină și gustul dulce. Foarte productiv și rezistent la condițiile climatice nefavorabile.",
+         "price": 52,
+         "inStock": true
+      },
+      {
+         "id": 6,
+         "name": "Păr Santa Maria",
+         "category": "pear",
+         "description": "Soiul Santa Maria este apreciat pentru fructele sale mari și gustoase. Maturizează târziu și se păstrează bine.",
+         "price": 55,
+         "inStock": false
+      },
+      {
+         "id": 7,
+         "name": "Prun Stanley",
+         "category": "plum",
+         "description": "Cel mai răspândit soi de prun pentru uscare. Fructe mari, ovale, cu pulpa fermă și gustul dulce-acrișor.",
+         "price": 40,
+         "inStock": true
+      },
+      {
+         "id": 8,
+         "name": "Prun Greengage",
+         "category": "plum",
+         "description": "Fructe mici până la mijlocii, cu coaja verde-gălbuie și pulpa foarte dulce și aromată. Ideal pentru consum proaspăt.",
+         "price": 43,
+         "inStock": true
+      },
+      {
+         "id": 9,
+         "name": "Prun Mirabelle",
+         "category": "plum",
+         "description": "Fructe mici, galbene, foarte dulci și aromate. Excelent pentru dulcețuri și distilate. Foarte productiv.",
+         "price": 38,
+         "inStock": true
+      },
+      {
+         "id": 10,
+         "name": "Cireș Bigarreau Napoleon",
+         "category": "cherry",
+         "description": "Fructe mari, ferme, cu coaja galben-roșie și pulpa dulce. Unul dintre cele mai apreciate soiuri de cireș dulce.",
+         "price": 60,
+         "inStock": true
+      },
+      {
+         "id": 11,
+         "name": "Cireș Van",
+         "category": "cherry",
+         "description": "Fructe foarte mari, roșu-închis, cu pulpa fermă și gustul dulce intens. Excelent pentru consum proaspăt.",
+         "price": 65,
+         "inStock": true
+      },
+      {
+         "id": 12,
+         "name": "Cireș Stella",
+         "category": "cherry",
+         "description": "Soi autofertil cu fructe mari, roșii, cu gustul dulce-acrișor. Foarte productiv și rezistent la crăparea fructelor.",
+         "price": 58,
+         "inStock": false
+      },
+      {
+         "id": 13,
+         "name": "Vișin Montmorency",
+         "category": "sour_cherry",
+         "description": "Cel mai popular soi de vișin acru. Fructe mijlocii, roșii, cu pulpa suculentă și gustul acrișor pronunțat.",
+         "price": 45,
+         "inStock": true
+      },
+      {
+         "id": 14,
+         "name": "Vișin Meteor",
+         "category": "sour_cherry",
+         "description": "Soi timpuriu cu fructe mari, roșu-închis, foarte suculente. Ideal pentru prepararea sucurilor și dulcețurilor.",
+         "price": 47,
+         "inStock": true
+      },
+      {
+         "id": 15,
+         "name": "Nuc Franquette",
+         "category": "walnut",
+         "description": "Soiul Franquette produce nuci mari, cu coaja subțire și miezul gustos. Foarte productiv și rezistent la ger.",
+         "price": 75,
+         "inStock": true
+      },
+      {
+         "id": 16,
+         "name": "Nuc Lara",
+         "category": "walnut",
+         "description": "Soi modern cu fructe foarte mari și miezul de calitate superioară. Rezistent la boli și foarte productiv.",
+         "price": 80,
+         "inStock": true
+      },
+      {
+         "id": 17,
+         "name": "Piersic Redhaven",
+         "category": "peach",
+         "description": "Fructe mari, cu coaja galben-roșie și pulpa galbenă, dulce și aromată. Foarte popular pentru consum proaspăt.",
+         "price": 55,
+         "inStock": true
+      },
+      {
+         "id": 18,
+         "name": "Piersic Saturn",
+         "category": "peach",
+         "description": "Piersic plat cu gust deosebit, foarte dulce și aromat. Fructe mijlocii până la mari, cu aspect atractiv.",
+         "price": 58,
+         "inStock": false
+      }
+   ]
+}

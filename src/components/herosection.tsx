@@ -2,6 +2,7 @@
 
 import { useContext } from "react";
 import { ScrollContext } from "./../context/scrollcontext";
+import Link from "next/link";
 
 export default function Hero() {
    const { handleScroll } = useContext(ScrollContext);
@@ -38,9 +39,11 @@ export default function Hero() {
                </p>
                {/* Buttons */}
                <div className='flex flex-col sm:flex-row gap-10'>
-                  <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-lg px-6 py-2 rounded-md transition-colors'>
-                     Descopera Produsele Noastre
-                  </button>
+                  <Link href='/produse'>
+                     <button className='cursor-pointer bg-green-600 hover:bg-green-700 text-white text-lg px-6 py-2 rounded-md transition-colors'>
+                        Descopera Produsele Noastre
+                     </button>
+                  </Link>
                   <button
                      onClick={(e) => handleScroll(e, "Despre Noi")}
                      className='cursor-pointer text-lg px-6 py-2 rounded-md border-3 bg-background/10 hover:bg-background/40 transition-colors'
